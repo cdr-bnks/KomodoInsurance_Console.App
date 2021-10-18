@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace KomodoInsuranceConsole.App
 {
-    class Program
+    class ProgramUI
     {
+
         static void Main(string[] args)
         {
+           
+
         }
+
+
+
     }
 }

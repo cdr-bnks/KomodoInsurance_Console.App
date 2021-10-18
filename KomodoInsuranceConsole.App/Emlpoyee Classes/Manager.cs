@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KomodoInsurance_Repo
+namespace KomodoInsuranceConsole.App.Emlpoyee_classes
 {
-    public class Class1
+    class Manager
     {
     }
 }
