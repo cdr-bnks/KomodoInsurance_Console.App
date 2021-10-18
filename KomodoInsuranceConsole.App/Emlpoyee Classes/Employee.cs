@@ -27,18 +27,18 @@ namespace KomodoInsuranceConsole.App.Emlpoyee_Classes
             PSAccess = devAccess;
 
         }
-        Employee developerOne = new Employee(1, "H,Micheal", 88000, true);
-        Employee developerTwo = new Employee(2, "H,Micheal", 90000, false);
-        Employee developerThree = new Employee(3, "H,Micheal", 80000, true);
-        Employee developerFour = new Employee(4, "H,Micheal", 62000, true);
-        Employee developerFive = new Employee(5, "H,Micheal", 89000, true);
-        Employee developerSix = new Employee(6, "H,Micheal", 99000, false);
-        Employee developerSeven = new Employee(7, "H,Micheal", 100000, true);
-        Employee developerEight = new Employee(8, "H,Micheal", 77000, true);
-        Employee developerNine = new Employee(9, "H,Micheal", 95000, true);
-        Employee developerTen = new Employee(10, "H,Micheal", 85000, false);
-        Employee developerElven = new Employee(11, "H,Micheal", 75000, true);
-        Employee developerTwelve = new Employee(12, "H,Micheal", 55000, false);
+        Employee employeeOne = new Employee(1, "Jackie", 88000, true);
+        Employee employeeTwo = new Employee(2, "Gustav", 90000, false);
+        Employee employeeThree = new Employee(3, "Yoshiro", 80000, true);
+        Employee employeeFour = new Employee(4, "Baki", 62000, true);
+        Employee emlpoyeeFive = new Employee(5, "Ali", 89000, true);
+        Employee employeeSix = new Employee(6, "Ryu", 99000, false);
+        Employee employeeSeven = new Employee(7, "Nola", 100000, true);
+        Employee employeeEight = new Employee(8, "Susie", 77000, true);
+        Employee employeeNine = new Employee(9, "Jacob", 95000, true);
+        Employee employeeTen = new Employee(10, "Caleb", 85000, false);
+        Employee employeeElven = new Employee(11, "Drew", 75000, true);
+        Employee empployeeTwelve = new Employee(12, "Lola", 55000, false);
 
         
     }

@@ -1,4 +1,5 @@
 ﻿using KomodoInsuranceConsole.App;
+using KomodoInsuranceConsole.App.Emlpoyee_Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,10 +43,10 @@ namespace KomodoInsurance_Repo
     //Interface segregation
     //Dependency inversion
 
-   public class DeveloperRepo : Developer
+   public class DeveloperRepo 
     {
-       protected readonly Dictionary<int, Developer> _developerDictionary = new Dictionary<int, Developer>();
+       protected readonly Dictionary<int, Employee> _employeeDictionary = new Dictionary<int, Employee>();
 
-        _developerDictionary.Add(developerOne.ID, developerOne)
+        _employeeDictionary.Add(developerOne.ID, developerOne)
     }
 }

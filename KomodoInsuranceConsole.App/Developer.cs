@@ -15,12 +15,6 @@ namespace KomodoInsuranceConsole.App
         public double Salary { get; set; }
         public bool PSAccess { get; set; }
 
-        public string Access()
-        {
-            PSAccess = true;
-                return "Authorized access";
-            // logic on if Developers have access 
-        }
         
 
 
