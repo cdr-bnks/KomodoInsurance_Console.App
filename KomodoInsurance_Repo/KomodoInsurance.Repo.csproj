@@ -46,6 +46,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\KomodoInsurance.Library\KomodoInsurance.Library.csproj">
+      <Project>{5DCE1A61-0D43-45E0-A355-A0B67CF58E36}</Project>
+      <Name>KomodoInsurance.Library</Name>
+    </ProjectReference>
     <ProjectReference Include="..\KomodoInsuranceConsole.App\KomodoInsurance.App.csproj">
       <Project>{9A64CEDA-2E89-4E6B-AE88-5391C6667B7B}</Project>
       <Name>KomodoInsurance.App</Name>
