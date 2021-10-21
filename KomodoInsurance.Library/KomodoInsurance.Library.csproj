@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9A64CEDA-2E89-4E6B-AE88-5391C6667B7B}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>KomodoInsuranceConsole.App</RootNamespace>
-    <AssemblyName>KomodoInsuranceConsole.App</AssemblyName>
+    <ProjectGuid>{5DCE1A61-0D43-45E0-A355-A0B67CF58E36}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KomodoInsurance.Library</RootNamespace>
+    <AssemblyName>KomodoInsurance.Library</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -45,15 +43,16 @@
   <ItemGroup>
     <Compile Include="Developer.cs" />
     <Compile Include="DevTeam.cs" />
-    <Compile Include="Emlpoyee Classes\Employee.cs" />
-    <Compile Include="Emlpoyee Classes\IAccess.cs" />
-    <Compile Include="Emlpoyee Classes\Manager.cs" />
-    <Compile Include="ProgramUI.cs" />
+    <Compile Include="Employees.cs" />
+    <Compile Include="IAccess.cs" />
+    <Compile Include="Manager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\KomodoInsuranceConsole.App\KomodoInsurance.App.csproj">
+      <Project>{9A64CEDA-2E89-4E6B-AE88-5391C6667B7B}</Project>
+      <Name>KomodoInsurance.App</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

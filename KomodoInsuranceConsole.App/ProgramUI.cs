@@ -8,12 +8,31 @@ namespace KomodoInsuranceConsole.App
 {
     class ProgramUI
     {
-
-        static void Main(string[] args)
+        public void Run()
         {
-           
+            RunData();
+        }
+
+        public void RunData()
+        {
+            private void GetAllDeveloper()
+            {
+
+            }
+
+
+
+
+
+
+
 
         }
+
+
+
+
+
 
 
 

@@ -1,29 +1,17 @@
 ﻿using KomodoInsuranceConsole.App;
-using KomodoInsuranceConsole.App.Emlpoyee_Classes;
-using System;
 using System.Collections.Generic;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KomodoInsurance_Repo
-{ 
-    // Developers Names and ID numbers.
-  
-    // Create a Dictionary<> for each Developer.
-  
-    // Do the Developers have access to the online learning tool: PLURALSIGHT? [Create readonly for the developers who have access]
-  
-    // Managers need to add and remove members to & from a team by their unique identifier.
-  
-    // Mangers should be able to see a list of existing developers to choose from and add to existing teams.
-  
-    // Managers will have their own team and add Developers indiviually from the Developer Directory to that team.
-  // --------------------------------------------------------------------------------------------------------------------------
-    //[Challenge]: HR Department uses the software *monthly* and gets a list of all the Developers that need PLURALSIGHT liscense. Create this functionality in the Console App.
+{
+    //   They should be able to see a list of existing developers to choose from and add to existing teams.
+    //   
 
-    //[Challenge]: Some of our managers are nitpicky and would like the functionality to add multiple Developers to a team at once, rather than one by one. integraate this into the App.
-  // ---------------------------------------------------------------------------------------------------------------------------
+    //Challenge: Our HR Department uses the software monthly to get a list of all our Developers that need a Pluralsight license. Create this functionality in the Console Application
+
+    //Challenge: Some of our managers are nitpicky and would like the functionality to add multiple Developers to a team at once, rather than one by one.Integrate this into your application.
+
     // CRITERIA
     //1) Solution Structure
 
@@ -36,17 +24,60 @@ namespace KomodoInsurance_Repo
     //5) No extra white space as well as maintained appropriate naming conventions.
 
     //6) [Challenges] implemented in project. CLEAN, MODULAR. UI is clean and very User friendly. EX.
-  // ----------------------------------------------------------------------------------------------------------------------------  
+    // ----------------------------------------------------------------------------------------------------------------------------  
     //Single-responsibility
     //Open-closed
     //Liskov substitution
     //Interface segregation
     //Dependency inversion
-
-   public class DeveloperRepo 
+    public class DeveloperRepo
     {
-       protected readonly Dictionary<int, Employee> _employeeDictionary = new Dictionary<int, Employee>();
+         readonly Dictionary<int, Developer> _developerDictionary = new Dictionary<int, Developer>();
+        
+        public bool AddDeveloperToDirectory(Developer developer)
+        {
+            int developerNum = _developerDictionary.Count;
+            _developerDictionary.Add(developerNum, developer);
+            bool developerAdded = _developerDictionary.Count > developerNum ? true : false;
+            return developerAdded;
+        }
+        
+        public Dictionary<int, Developer> GetEachDeveloper() 
+        {
+            return _developerDictionary;
+         }
 
-        _employeeDictionary.Add(developerOne.ID, developerOne)
+        public bool GetDeveloperAccessCode(Developer access)
+        {
+            int idLog = _developerDictionary.Count;
+            _developerDictionary.Add(idLog, access);
+            bool idAdded = _developerDictionary.Count > idLog ? true : false;
+            return idAdded;
+
+        }
+        public Developer GetDeveloperByName(string name)
+        {
+            foreach(KeyValuePair<int, Developer>  in _developerDictionary)
+        }
+        public bool UpdateDeveloperDirectory(string outOfDateLog, Developer upDatedLog)
+        {
+            Developer outDated =
+        }
+
+
+                
+
+
+
+                
+            
+        
+
+         
+
+        
+
+        
     }
+  
 }

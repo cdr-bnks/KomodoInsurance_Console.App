@@ -43,13 +43,12 @@
   <ItemGroup>
     <Compile Include="DeveloperRepo.cs" />
     <Compile Include="DevTeamRepo.cs" />
-    <Compile Include="Manager Classes\ManagerRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KomodoInsuranceConsole.App\KomodoInsurance_Console.App.csproj">
+    <ProjectReference Include="..\KomodoInsuranceConsole.App\KomodoInsurance.App.csproj">
       <Project>{9A64CEDA-2E89-4E6B-AE88-5391C6667B7B}</Project>
-      <Name>KomodoInsurance_Console.App</Name>
+      <Name>KomodoInsurance.App</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

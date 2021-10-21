@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoInsurance_Console.App", "KomodoInsuranceConsole.App\KomodoInsurance_Console.App.csproj", "{9A64CEDA-2E89-4E6B-AE88-5391C6667B7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoInsurance.App", "KomodoInsuranceConsole.App\KomodoInsurance.App.csproj", "{9A64CEDA-2E89-4E6B-AE88-5391C6667B7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoInsurance_Repo", "KomodoInsurance_Repo\KomodoInsurance_Repo.csproj", "{9A0C186D-F343-44E5-9F17-F15F377607E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoInsurance.Repo", "KomodoInsurance_Repo\KomodoInsurance.Repo.csproj", "{9A0C186D-F343-44E5-9F17-F15F377607E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoInsurance_UnitTest", "KomodoInsurance_UnitTest\KomodoInsurance_UnitTest.csproj", "{EDCA2ABA-CA6B-438C-BA12-3619DF86A185}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoInsurance.UnitTest", "KomodoInsurance_UnitTest\KomodoInsurance.UnitTest.csproj", "{EDCA2ABA-CA6B-438C-BA12-3619DF86A185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoInsurance.Library", "KomodoInsurance.Library\KomodoInsurance.Library.csproj", "{5DCE1A61-0D43-45E0-A355-A0B67CF58E36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{EDCA2ABA-CA6B-438C-BA12-3619DF86A185}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDCA2ABA-CA6B-438C-BA12-3619DF86A185}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDCA2ABA-CA6B-438C-BA12-3619DF86A185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DCE1A61-0D43-45E0-A355-A0B67CF58E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DCE1A61-0D43-45E0-A355-A0B67CF58E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DCE1A61-0D43-45E0-A355-A0B67CF58E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DCE1A61-0D43-45E0-A355-A0B67CF58E36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
