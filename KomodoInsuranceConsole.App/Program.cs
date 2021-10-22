@@ -12,7 +12,10 @@ namespace KomodoInsuranceConsole.App
         {
             ProgramUI data = new ProgramUI();
             data.Run();
-        }
 
+          
+        }
+      
     }
+    
 }

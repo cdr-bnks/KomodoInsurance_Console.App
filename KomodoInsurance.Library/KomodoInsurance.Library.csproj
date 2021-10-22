@@ -44,8 +44,6 @@
     <Compile Include="Developer.cs" />
     <Compile Include="DevTeam.cs" />
     <Compile Include="Employees.cs" />
-    <Compile Include="IAccess.cs" />
-    <Compile Include="Manager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
