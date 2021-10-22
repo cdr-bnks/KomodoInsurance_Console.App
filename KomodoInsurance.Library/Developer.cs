@@ -16,8 +16,8 @@ namespace KomodoInsurance.Library
 
         public override  void DataLog()
         {
-            
 
+            base.DataLog();
 
         }
 

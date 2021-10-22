@@ -8,7 +8,10 @@ namespace KomodoInsurance.Library
 {
     public class DevTeam : Developer
     {
-
+        public override void DataLog()
+        {
+            base.DataLog();
+        }
         public enum ListOfManagers
         {
             Carlos = 1,
@@ -27,6 +30,10 @@ namespace KomodoInsurance.Library
         public List<Team> Teams { get; set; }
         public class Team : Employee
         {
+            public override void DataLog()
+            {
+                base.DataLog();
+            }
             public string ManagerNames
             { get; }
             public ListOfManagers ManagerList { get; set; }
