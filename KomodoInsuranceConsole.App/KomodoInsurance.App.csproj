@@ -53,5 +53,11 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KomodoInsurance_UnitTest\KomodoInsurance.UnitTest.csproj">
+      <Project>{edca2aba-ca6b-438c-ba12-3619df86a185}</Project>
+      <Name>KomodoInsurance.UnitTest</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

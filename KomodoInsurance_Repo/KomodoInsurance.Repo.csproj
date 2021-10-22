@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\KomodoInsurance.Library\KomodoInsurance.Library.csproj">
-      <Project>{5DCE1A61-0D43-45E0-A355-A0B67CF58E36}</Project>
+      <Project>{5dce1a61-0d43-45e0-a355-a0b67cf58e36}</Project>
       <Name>KomodoInsurance.Library</Name>
     </ProjectReference>
     <ProjectReference Include="..\KomodoInsuranceConsole.App\KomodoInsurance.App.csproj">
-      <Project>{9A64CEDA-2E89-4E6B-AE88-5391C6667B7B}</Project>
+      <Project>{9a64ceda-2e89-4e6b-ae88-5391c6667b7b}</Project>
       <Name>KomodoInsurance.App</Name>
     </ProjectReference>
   </ItemGroup>

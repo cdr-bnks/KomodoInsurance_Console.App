@@ -9,7 +9,7 @@ namespace KomodoInsurance.Library
 {
     public class Employees
     {
-        public void GetAllDeveloper()
+        public void GetAllDevelopers()
         {
             Dictionary<int, Developer> developerDicitonary = new Dictionary<int, Developer>();
 

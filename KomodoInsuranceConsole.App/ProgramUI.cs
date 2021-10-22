@@ -8,7 +8,7 @@ namespace KomodoInsuranceConsole.App
 {
     class ProgramUI 
     {
-        private readonly DeveloperRepo _developerRepo = new DeveloperRepo
+        //private readonly DeveloperRepo _developerRepo = new DeveloperRepo
         public void Run()
         {
             RunData();
@@ -23,24 +23,24 @@ namespace KomodoInsuranceConsole.App
                     "I have exicuted the beta software application your team acquired of me.\n" +
                     "Here are all the different functionalities Product Managers can use to better aid them in their search for the right\n" +
                     "developer/developer Teams.\n" +
-                    "Enter in an option you would like to select.\n" +
-                    "You can choose from:\n" +
-                    "1.| Display The Employee(Developer) log ======> []\n" +
-                    "2.| Search For The Developer by Access code ======>[]\n" +
-                    "3.| Update existing Employee(Developer) log ======> []\n" +
-                    "4.| Remove Employee(Developer) from existing log ======> []\n" +
-                    "5.| Exit ======> []");
+                    "Enter in an option you would like to select.\n\n\n" +
+                    "You can choose from:\n\n" +
+                    "1.| Display the developer log or view teamlog ======> []\n\n" +
+                    "2.| Search for the Team of developers by Access code ======>[]\n\n" +
+                    "3.| Get the existing developer log by Name ======> []\n\n" +
+                    "4.| Update the directory log and Team Log   ======> []\n\n" +
+                    "5.| Exit =====>[]\n\n ");
                 string userInterface = Console.ReadLine();
                 switch (userInterface)
                 {
                     case "1":
-                        // DisplayDeveloperLog();
+                        // AddDeveloperToDirectory();
                         break;
                     case "2":
-                        //FindDeveloperByAccessCode();
+                        //GetEachDeveloper();
                         break;
                     case "3":
-                        //UpdateExistingDeveloperLog();
+                        //GetDeveloperAccessCode();
                         break;
                     case "4":
                         //RemoveFromExistingDeveloperLog();

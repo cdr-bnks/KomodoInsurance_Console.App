@@ -22,8 +22,6 @@ namespace KomodoInsurance.Library
 
         }
 
-
-
         public Developer(int id, string name, double salary, bool devAccess, int aid)
         {
             ID = id;
@@ -59,6 +57,11 @@ namespace KomodoInsurance.Library
             developerDicitonary.Add(developerTen.ID, developerTen);
             developerDicitonary.Add(developerEleven.ID, developerEleven);
             developerDicitonary.Add(developerTwelve.ID, developerTwelve);
+        }
+
+        public static implicit operator Developer(KeyValuePair<int, Developer> v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
