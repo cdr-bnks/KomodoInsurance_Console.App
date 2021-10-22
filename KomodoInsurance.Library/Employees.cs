@@ -7,10 +7,28 @@ using System.Threading.Tasks;
 
 namespace KomodoInsurance.Library
 {
-    public class Employees
+    public class Employee
     {
-        public void GetAllDevelopers()
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public double Salary { get; set; }
+        
+        
+
+        public virtual void DataLog()
         {
+            ;
+
+
+        }
+
+        public Employee(int id, string name, double salary)
+        {
+            ID = id;
+            Name = name;
+            Salary = salary;
+            
+
             Dictionary<int, Developer> developerDicitonary = new Dictionary<int, Developer>();
 
             Developer developerOne = new Developer(1, "Jackie", 88000, true, 1331);
@@ -39,6 +57,9 @@ namespace KomodoInsurance.Library
             developerDicitonary.Add(developerEleven.ID, developerEleven);
             developerDicitonary.Add(developerTwelve.ID, developerTwelve);
         }
- 
+
+        
     }
+ 
+    
 }

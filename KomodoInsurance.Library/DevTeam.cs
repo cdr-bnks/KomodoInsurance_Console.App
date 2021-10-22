@@ -6,27 +6,42 @@ using System.Threading.Tasks;
 
 namespace KomodoInsurance.Library
 {
-  public class DevTeam
+    public class DevTeam : Developer
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public double Salary { get; set; }
-        public bool PSAccess { get; set; }
-        public int AccessCode { get; set; }
+
+        public enum ListOfManagers
+        {
+            Carlos = 1,
+            Tyler,
+            Ruby,
+            Hanma
+
+        }
+
+        public DevTeam(int id, string name, double salary, bool devAccess, int aid, List<Team> teams)
+            : base(id, name, salary, devAccess, aid )
+        {
+            Teams = teams;
+            
+        }
+        public List<Team> Teams { get; set; }
+        public class Team : Employee
+        {
+            public string ManagerNames
+            { get; }
+            public ListOfManagers ManagerList { get; set; }
+
+            public Team(int id, string name, double salary, string managerNames, ListOfManagers managerList)
+               : base(id, name, salary)
+            {
+                ManagerNames = managerNames;
+                ManagerList = managerList;
+            }
+        }
        
-        public DevTeam()
-        {
+        
 
-        }
-
-        public DevTeam(int id, string name, double salary, bool DevAccess, int aid )
-        {
-            ID = id;
-            Name = name;
-            Salary = salary;
-            PSAccess = DevAccess;
-            AccessCode = aid;
-
-        }
+        
+        
     }
 }

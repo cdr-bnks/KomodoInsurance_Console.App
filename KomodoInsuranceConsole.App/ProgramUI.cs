@@ -22,7 +22,7 @@ namespace KomodoInsuranceConsole.App
                 Console.WriteLine(" Greetings and Salutation Board members and Managers of Komodo Insurance.\n" +
                     "I have exicuted the beta software application your team acquired of me.\n" +
                     "Here are all the different functionalities Product Managers can use to better aid them in their search for the right\n" +
-                    "developer/developer Teams.\n" +
+                    "canidates.\n" +
                     "Enter in an option you would like to select.\n\n\n" +
                     "You can choose from:\n\n" +
                     "1.| Display the developer log or view teamlog ======> []\n\n" +
