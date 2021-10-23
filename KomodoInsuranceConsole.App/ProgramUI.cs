@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KomodoInsuranceConsole.App
 {
-    class ProgramUI 
+    class Developer
     {
         public void Run()
         {
@@ -33,7 +33,7 @@ namespace KomodoInsuranceConsole.App
                 switch (userInterface)
                 {
                     case "1":
-                         //AddDeveloperToDirectory();
+                        AddDeveloperToDirectory();
                         break;
                     case "2":
                         //GetEachDeveloper();
@@ -52,12 +52,17 @@ namespace KomodoInsuranceConsole.App
                             "Press any key to continue ====>__");
                         Console.ReadKey();
                         break;
-                } 
-                
+                }
+
 
             }
+
         }
-        
-        
+
+        private void AddDeveloperToDirectory()
+        {
+            
+    }
+        }
     }
 }

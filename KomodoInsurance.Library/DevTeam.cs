@@ -28,7 +28,7 @@ namespace KomodoInsurance.Library
             
         }
         public List<Team> Teams { get; set; }
-        public class Team : Employee
+        public class Team : DevTeam
         {
             public override void DataLog()
             {
@@ -38,8 +38,8 @@ namespace KomodoInsurance.Library
             { get; }
             public ListOfManagers ManagerList { get; set; }
 
-            public Team(int id, string name, double salary, string managerNames, ListOfManagers managerList)
-               : base(id, name, salary)
+            public Team(int id, string name, double salary, bool devAccess, int aid, List<Team> teams, string managerNames, ListOfManagers managerList)
+               : base(id, name, salary, devAccess, aid, teams)
             {
                 ManagerNames = managerNames;
                 ManagerList = managerList;
